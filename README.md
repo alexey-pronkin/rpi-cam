@@ -2,13 +2,17 @@
 Simple raspberry pi camera capture with some handling of captured videos
 
 ```bash
-python -m venv /home/pi/rpi-cam
-source /home/pi/rpi-cam/bin/activate
+python -m venv /home/pi/rpi-camv
+source /home/pi/rpi-camv/bin/activate
+pip install ephem
 ```
+
 Clone repo:
+
 ```bash
 git clone https://github.com/alexey-pronkin/rpi-cam.git
 ```
+
 Change variables inside rpi-cam.py to your values:
 
 VIDEOS_PATH = '/home/pi/Desktop/videos/'
@@ -19,6 +23,8 @@ LAT = 55.494120 # Camera latitude
 LON = 38.661637 # Camera longitude
 
 Start recording
+
 ```bash
-python rpi-cam/rpi-cam/rpi-cam.py
+cd rpi-cam
+python rpi-cam/rpi-cam.py
 ```
